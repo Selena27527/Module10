@@ -1,0 +1,9 @@
+class Todo:
+    def __init__(self):
+        self._task_list = list()
+    def add_task(self, task):
+        self._task_list.append(task)
+    def remove_task(self, task):
+        raise NotImplementedError
+    def _repr__(self):
+        return f"Task List: {self._task_list}"
